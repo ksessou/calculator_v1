@@ -52,10 +52,7 @@ function App() {
         <h1>Simplest Working Calculator</h1>
       </div>
       <form onSubmit={(e) => e.preventDefault()}>
-        <p ref={resultRef}>
-          {/* add the value of the current total */}
-          {result.toFixed(2)} {/* Format result to 2 decimal places */}
-        </p>
+        <p ref={resultRef}>{result.toFixed(2)}</p>
         <input
           pattern="[0-9]"
           ref={inputRef}
